@@ -1,0 +1,12 @@
+<launch>
+  
+ <!-- <include file="$(find iri_wam_reproduce_trajectory)/launch/start_service.launch"/> -->
+
+ <node pkg = "mensaje"
+	type="mensaje.py"
+	name="NodoMamoncito"
+	output="screen">
+ </node>
+</launch>
+
+
