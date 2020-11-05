@@ -1,11 +1,13 @@
 Para que este nodo funcione, necesitas descargar el paquete de ros kinetic  de rosserial. El nodo que deberia de  controlar el arduino lo subes como
 si fuera cualquier programa de arduino comun  y corriente y despues, desde la Raspberry py que este conectada mediante un cable usb al arduino, utilizas el siguiente
 comando:
+rosrun rosserial_python serial_node.py /dev/ttyACM0
+
+recuerda darle permisos de ejecucion al puerto USB donde tengas conectado tu arduino antes, esto lo haces con el siguiente comando 
+chmod 666 /dev/ttyACM0
 
 
-rosrun rosserial_python serial_node.py /dev/ttyUSB0
-
-DONDE: /dev/ttyUSB0 es el puerto donde conectaste el arduino en la rasp/computadora
+DONDE: /dev/ttyACM0 es el puerto donde conectaste el arduino en la rasp/computadora
 
 
 Si tienes mas dudas puedes consultar en la siguiente pagina:
